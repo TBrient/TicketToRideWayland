@@ -11,7 +11,7 @@ import java.awt.event.ActionListener;
  */
 public class Main extends JPanel {
 
-    public Main(int w, int h) {
+    public Main(int w, int h ) {
         setSize(WIDTH, HEIGHT);
 
 
