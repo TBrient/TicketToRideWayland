@@ -6,16 +6,18 @@ public class Route {
     private Node y;
     private Color colo;
     private int trackInt=10;
+    private boolean filled;
+
+
     public Route(Node x2, Node y2, Color col){
         x=x2;
         y=y2;
         colo=col;
     }
     public int getDistance(Node x,Node y){
-        int xdis= Math.abs(x.x-y.x);
-        int ydis=Math.abs(x.y-y.y);
-        int totdis= (int)(Math.sqrt((xdis*xdis)*(ydis*ydis)));
-        return totdis;
+        int xdis= Math.abs(x.getX()-y.getX());
+        int ydis=Math.abs(x.getY()-y.getY());
+        return (int)(Math.sqrt((xdis*xdis)*(ydis*ydis)));
     }
     public void draw(Graphics2D g){
         Graphics2D g2 = (Graphics2D) g;
@@ -25,9 +27,17 @@ public class Route {
         int dis=getDistance(x,y);
         int totalTrack=dis/trackInt;
         for (int i = 0; i < totalTrack; i++) {
-
-
+            int temp=(dis/totalTrack)*1;
+            g2.drawLine(temp+15,temp+15,temp-15,temp-15);
         }
+    }
+
+    public boolean isFilled() {
+        return filled;
+    }
+
+    public void setFilled(boolean filled) {
+        this.filled = filled;
     }
 
 
