@@ -4,7 +4,7 @@
 public class Node {
 
     private int x , y; //relative to top left of the map jpg
-    private String label;
+    private String label; //the text description of this Node
 
     public Node(int x, int y, String label) {
         this.x = x;
