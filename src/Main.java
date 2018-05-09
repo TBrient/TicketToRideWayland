@@ -7,9 +7,12 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 /**
- * Created by michael_hopps on 5/4/18.
+ * Created by Hadyn Davies on 5/4/18.
  */
 public class Main extends JPanel {
+
+//    private Map
+
 
     public Main(int w, int h ) {
         setSize(WIDTH, HEIGHT);
@@ -22,6 +25,7 @@ public class Main extends JPanel {
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
         Graphics2D g2 = (Graphics2D)g;
+
 
 
     }
