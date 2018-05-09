@@ -11,6 +11,9 @@ import java.awt.event.ActionListener;
  */
 public class Main extends JPanel {
 
+//    private Map
+
+
     public Main(int w, int h ) {
         setSize(WIDTH, HEIGHT);
 
