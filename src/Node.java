@@ -7,7 +7,7 @@ public class Node {
     private String label; //the text description of this Node
 
     public Node(int x, int y, String label) {
-        this.x = x;
+        this.x =  x;
         this.y = y;
         this.label = label;
     }
